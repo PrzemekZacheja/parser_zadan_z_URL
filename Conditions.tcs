@@ -1,0 +1,33 @@
+taskKey="pl.codegym.task.task15.task1527"\n\nParser żądań
+
+Odczytaj adres URL z konsoli.
+Wyświetl listę wszystkich parametr&oacute;w oddzielonych spacjami (Parametry są umieszczone za &quot;?&quot; i oddzielone &quot;&amp;&quot;, np. &quot;lvl=15&quot;).
+Adres URL zawiera przynajmniej 1 parametr.
+Parametry muszą być wyświetlane w tej samej kolejności, w jakiej występują w adresie URL.
+Jeśli występuje parametr obj, przekaż jego wartość do odpowiedniej metody alert.
+alert(double value) - dla liczb (ułamki zapisywane przy pomocy separatora dziesiętnego)
+alert(String value) - dla ciąg&oacute;w
+Należy pamiętać, że metoda alert musi być wywołana PO wyświetleniu listy wszystkich parametr&oacute;w.
+
+Przykład 1
+Dane wejściowe:
+http://codegym.cc/alpha/index.html?lvl=15&amp;view&amp;name=Amigo
+Wyjście:
+lvl view name
+
+Przykład 2
+Dane wejściowe:
+http://codegym.cc/alpha/index.html?obj=3.14&amp;name=Amigo
+Wyjście:
+obj name
+double: 3.14
+
+
+Требования:
+1.	Program powinien wczytywać tylko jedną linię z klawiatury.
+2.	Klasa Solution nie może mieć p&oacute;l statycznych.
+3.	Program musi wyświetlać dane na ekranie zgodnie z warunkami zadania.
+4.	Program powinien wywoływać metodę alert z parametrem double, jeśli parametr obj może być poprawnie przekonwertowany na double.
+5.	Program powinien wywoływać metodę alert z parametrem String, jeśli parametr obj NIE MOŻE być poprawnie przekonwertowany na double.
+
+
