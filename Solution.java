@@ -14,13 +14,8 @@ public class Solution {
         BufferedReader breader = new BufferedReader(new InputStreamReader(System.in));
         String lineFromBuffer = breader.readLine().trim();
 
-//        lineFromBuffer = "http://codegym.cc/alpha/index.html?obj=3.14&name=Amigo";
-
         checkParseToDoubleFromString(lineFromBuffer);
-
-
     }
-
 
     private static void checkParseToDoubleFromString(String stringURL) {
         String[] parametersTable = separateParametersFromURL(stringURL);
@@ -71,13 +66,11 @@ public class Solution {
         return stringList;
     }
 
-
     private static String getStringAfterSign(String lineFromBuffer, char character) {
         int indexOfStartParametersInURL = lineFromBuffer.lastIndexOf(character);
         String stringafterSign = lineFromBuffer.substring(indexOfStartParametersInURL + 1);
         return stringafterSign;
     }
-
 
     public static void alert(double value) {
         System.out.println("double: " + value);
